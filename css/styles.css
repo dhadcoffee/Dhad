@@ -1,0 +1,57 @@
+
+
+  body {
+    font-family: 'Tajawal', sans-serif;
+    background: linear-gradient(
+      to right,
+      rgba(230, 220, 202, 0.3) 0%,
+      rgba(230, 220, 202, 1) 20%,
+      rgba(230, 220, 202, 1) 80%,
+      rgba(230, 220, 202, 0.3) 100%
+    );
+  }
+
+    .nav-link {
+      transition-duration: 300ms;
+      transition-property: color;
+      font-size: 1rem;
+      color: #000000;
+    }
+    .nav-link:hover {
+      color: #0F3C2D;
+    }
+    .nav-link.underline-hover::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 3px;
+      width: 0;
+      background-color: #083d2b;
+      transition: width 0.3s;
+    }
+    .nav-link.underline-hover:hover::after {
+      width: 100%;
+    }
+    .nav-link.underline-hover {
+      position: relative;
+      display: inline-block;
+    }
+
+ 
+  @media (min-width: 1600px) {
+    .custom-wide-gap {
+      column-gap: 80px !important;
+    }
+  }
+
+
+
+  @keyframes pulseGradient {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}

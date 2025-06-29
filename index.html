@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>قهوة ضاد</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+
+<body>
+
+<!-- ✅ Navbar -->
+<nav class="bg-[#E6DCCA]/70 shadow-md fixed top-0 left-0 w-full z-50 backdrop-blur-sm shadow-[0_-2px_4px_0_rgba(0,0,0,0.2)]">
+  <div class="w-full xl:px-[300px] px-4 flex items-center justify-between py-2">
+
+    <!-- Logo (on the right in RTL) -->
+    <div class="w-16 h-16 flex-shrink-0">
+      <img src="images/Dhad_Coffee_Logo.svg" alt="ضاد" class="w-full h-full object-contain" />
+    </div>
+
+    <!-- Hamburger Menu (on the left in RTL) -->
+    <button id="mobile-menu-button" class="xl:hidden flex items-center px-3 py-2 border rounded text-black border-black">
+      <svg class="fill-current h-6 w-6" viewBox="0 0 24 24">
+        <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+
+    <!-- Desktop Menu -->
+<ul class="hidden xl:flex space-x-reverse space-x-[80px] text-lg text-black font-bold custom-wide-gap">
+  <li><a href="index.html" class="nav-link underline-hover text-[#083d2b] border-bot border-b-2 border-[#083d2b]">الأصناف</a></li>
+  <li><a href="about.html" class="nav-link underline-hover">عن أسرة ضاد</a></li>
+  <li><a href="location.html" class="nav-link underline-hover">موقعنا</a></li>
+  <li class="ms-[60px]"><a href="contact.html" class="nav-link underline-hover">تواصل معنا</a></li>
+</ul>
+
+  </div>
+</nav>
+
+
+<!-- ✅ Mobile Menu -->
+<div id="mobile-menu" class="hidden fixed top-[70px] left-0 right-0 bg-[#e6dccb] shadow-md px-4 py-4 xl:hidden z-50">
+  <ul class="flex flex-col space-y-4 text-black text-lg font-bold">
+    <li><a href="index.html" class="nav-link underline-hover block">الأصناف</a></li>
+    <li><a href="about.html" class="nav-link underline-hover block">عن أسرة ضاد</a></li>
+    <li><a href="location.html" class="nav-link underline-hover block">موقعنا</a></li>
+    <li><a href="contact.html" class="nav-link underline-hover block">تواصل معنا</a></li>
+  </ul>
+</div>
+
+<!--  First Section -->
+<section class="pt-[120px] xl:px-[300px] px-4">
+
+<div class="relative w-full rounded-2xl overflow-hidden">
+
+  <div class="relative w-full aspect-square sm:aspect-[3/1]">
+    <img
+      src="images/hot_coffe.png"
+      alt="HOT Coffee"
+      class="absolute top-0 left-0 w-full h-full object-cover"
+    />
+
+    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
+                w-full h-[80px] sm:h-[80px] bg-[#472E1ECC] border-t border-b border-white
+                flex items-center justify-center">
+      <h2 class="text-white text-base font-bold lg:text-4xl sm:text-xl">قائمة المشروبات</h2>
+    </div>
+  </div>
+</div>
+
+
+  <div class="flex justify-center my-8">
+    <div class="bg-[#0F3C2D] text-white py-1 px-4 rounded-[10px] text-base md:text-lg font-bold text-center w-[90%] sm:w-[60%] md:w-[55%]">
+      قهوة ساخنة
+    </div>
+  </div>
+
+  <!-- Drinks List -->
+ <div class="w-full sm:w-[80%] md:w-[50%] mx-auto text-base md:text-lg text-right space-y-3">
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">اسبرسو</span><span>70</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">اسبرسو مختص</span><span>90</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">قهوة تركية سنجل</span><span>60</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">قهوة تركية دبل</span><span>75</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">امريكانو</span><span>125</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">قهوة عربية</span><span>145</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">شاي كرك</span><span>120</span>
+  </div>
+</div>
+
+
+
+  <div class="flex justify-center my-8">
+    <div class="bg-[#0F3C2D] text-white py-1 px-4 rounded-[10px] text-base md:text-lg font-bold text-center w-[90%] sm:w-[60%] md:w-[55%]">
+      قهوة مقطرة
+    </div>
+  </div>
+
+  <!-- Drinks List -->
+ <div class="w-full sm:w-[80%] md:w-[50%] mx-auto text-base md:text-lg text-right space-y-3">
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">v60</span><span>70</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">كيمكس</span><span>160</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">كولد برو</span><span>160</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">سايفون</span><span>145</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">ايرو بريس</span><span>145</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">قهوة اليوم</span><span>130</span>
+  </div>
+</div>
+
+
+
+<div class="flex justify-center my-8">
+    <div class="bg-[#0F3C2D] text-white py-1 px-4 rounded-[10px] text-base md:text-lg font-bold text-center w-[90%] sm:w-[60%] md:w-[55%]">
+      قهوة ساخنة مع حليب
+    </div>
+  </div>
+
+  <!-- Drinks List -->
+ <div class="w-full sm:w-[80%] md:w-[50%] mx-auto text-base md:text-lg text-right space-y-3">
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">فلات وايت</span><span>95</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">لاتيه</span><span>105</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">كابتشينو</span><span>95</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">مكياتو</span><span>75</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">كوتادو</span><span>90</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">موكا</span><span>130</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">وايت موكا</span><span>130</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">لاتيه اسباني</span><span>135</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">لاتيه اسباني بالفستق</span><span>180</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">كراميل مكياتو</span><span>135</span>
+  </div>
+   <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">اسبرسو افوكادو</span><span>90</span>
+  </div>
+</div>
+
+
+
+
+<div class="flex justify-center my-8">
+    <div class="bg-[#0F3C2D] text-white py-1 px-4 rounded-[10px] text-base md:text-lg font-bold text-center w-[90%] sm:w-[60%] md:w-[55%]">
+      قهوة مثلجة
+    </div>
+  </div>
+
+  <!-- Drinks List -->
+ <div class="w-full sm:w-[80%] md:w-[50%] mx-auto text-base md:text-lg text-right space-y-3">
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">موكا مثلجة</span><span>135</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">وايت موكا مثلجة</span><span>135</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">لاتيه اسباني مثلج</span><span>135</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">لاتيه اسباني بالفستق مثلج</span><span>180</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">كراميل مكياتو مثلج</span><span>140</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">فرابيه كلاسيك</span><span>110</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">فرابيت شوكلت</span><span>135</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">فرابيه كراميل</span><span>135</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">فرابيه كراميل مملح</span><span>140</span>
+  </div>
+</div>
+
+
+
+
+<div class="flex justify-center my-8">
+    <div class="bg-[#0F3C2D] text-white py-1 px-4 rounded-[10px] text-base md:text-lg font-bold text-center w-[90%] sm:w-[60%] md:w-[55%]">
+       عصير طبيعي
+    </div>
+  </div>
+
+  <!-- Drinks List -->
+ <div class="w-full sm:w-[80%] md:w-[50%] mx-auto text-base md:text-lg text-right space-y-3">
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">برتقال</span><span>85</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">فراولة</span><span>85</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">جوافة</span><span>85</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">مانجو</span><span>95</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">فاكهة الموسم</span><span>95</span>
+  </div>
+</div>
+
+
+
+
+
+<div class="flex justify-center my-8">
+    <div class="bg-[#0F3C2D] text-white py-1 px-4 rounded-[10px] text-base md:text-lg font-bold text-center w-[90%] sm:w-[60%] md:w-[55%]">
+        ميلك شيك
+    </div>
+  </div>
+
+  <!-- Drinks List -->
+ <div class="w-full sm:w-[80%] md:w-[50%] mx-auto text-base md:text-lg text-right space-y-3">
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">مانجو - باشن فروت</span><span>135</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">فراولة - بلوبيري</span><span>135</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">شوكلت</span><span>135</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">فانيليا</span><span>135</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">فستق</span><span>180</span>
+  </div>
+</div>
+
+
+
+
+<div class="flex justify-center my-8">
+    <div class="bg-[#0F3C2D] text-white py-1 px-4 rounded-[10px] text-base md:text-lg font-bold text-center w-[90%] sm:w-[60%] md:w-[55%]">
+        مشروبات منوعة
+    </div>
+  </div>
+
+  <!-- Drinks List -->
+ <div class="w-full sm:w-[80%] md:w-[50%] mx-auto text-base md:text-lg text-right space-y-3">
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">ريد بول منكه</span><span>175</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">ريد بول كلاسيك</span><span>125</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">شاي مثلج منكه</span><span>125</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">موهيتو منكه</span><span>120</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">شاي</span><span>60</span>
+  </div>
+</div>
+
+</section>
+
+
+
+
+<!--  Second Section -->
+<section class="pt-[120px] xl:px-[300px] px-4">
+
+<div class="relative w-full rounded-2xl overflow-hidden">
+
+  <div class="relative w-full aspect-square sm:aspect-[3/1]">
+    <img
+      src="images/Snacks_Menu.png"
+      alt="HOT Coffee"
+      class="absolute top-0 left-0 w-full h-full object-cover"
+    />
+
+    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
+                w-full h-[80px] sm:h-[80px] bg-[#472E1ECC] border-t border-b border-white
+                flex items-center justify-center">
+      <h2 class="text-white text-base font-bold lg:text-4xl sm:text-xl">قائمة المأكولات</h2>
+    </div>
+  </div>
+</div>
+
+
+  <div class="flex justify-center my-8">
+    <div class="bg-[#0F3C2D] text-white py-1 px-4 rounded-[10px] text-base md:text-lg font-bold text-center w-[90%] sm:w-[60%] md:w-[55%]">
+      فطور ضاد
+    </div>
+  </div>
+
+  <!-- Drinks List -->
+ <div class="w-full sm:w-[80%] md:w-[50%] mx-auto text-base md:text-lg text-right space-y-3">
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">دجاج فاهيتا</span><span>140</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1"> دجاج صب</span><span>135</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1"> جبنة حلوم</span><span>130</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1"> جبنة مشكلة </span><span>110</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">رومي مدخن</span><span>120</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1"> لحمة باردة</span><span>145</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1"> توست جبنة مشكلة</span><span>115</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1"> توست رومي مدخن</span><span>125</span>
+  </div>
+</div>
+
+
+
+ <div class="flex justify-center my-8">
+    <div class="bg-[#0F3C2D] text-white py-1 px-4 rounded-[10px] text-base md:text-lg font-bold text-center w-[90%] sm:w-[60%] md:w-[55%]">
+      كرواسون
+    </div>
+  </div>
+
+  <!-- Drinks List -->
+ <div class="w-full sm:w-[80%] md:w-[50%] mx-auto text-base md:text-lg text-right space-y-3">
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">كرواسون سادة</span><span>60</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">كرواسون رومي مدخن</span><span>85</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">كرواسون شيدر</span><span>85</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1"> كرواسون رومي شيدر</span><span>115</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">كرواسون فستق</span><span>120</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">كرواسون شوكلت</span><span>110</span>
+  </div>
+</div>
+
+</section>
+
+
+
+<!-- Third Section -->
+
+<section class="pt-[120px] xl:px-[300px] px-4">
+
+<div class="relative w-full rounded-2xl overflow-hidden">
+
+  <div class="relative w-full aspect-square sm:aspect-[3/1]">
+    <img
+      src="images/Sweets_Menu.png"
+      alt="HOT Coffee"
+      class="absolute top-0 left-0 w-full h-full object-cover"
+    />
+
+    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
+                w-full h-[80px] sm:h-[80px] bg-[#472E1ECC] border-t border-b border-white
+                flex items-center justify-center">
+      <h2 class="text-white text-base font-bold lg:text-4xl sm:text-xl">قائمة الحلويات</h2>
+    </div>
+  </div>
+</div>
+
+
+  <div class="flex justify-center my-8">
+    <div class="bg-[#0F3C2D] text-white py-1 px-4 rounded-[10px] text-base md:text-lg font-bold text-center w-[90%] sm:w-[60%] md:w-[55%]">
+       الحلويات
+    </div>
+  </div>
+
+  <!-- Drinks List -->
+ <div class="w-full sm:w-[80%] md:w-[50%] mx-auto text-base md:text-lg text-right space-y-3">
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">كوكيز فانيليا</span><span>75</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">كوكيز شوكليت</span><span>85</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">كيكة انجليزية(برتقال - فانيليا - شوكلت)</span><span>75</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">براونيز</span><span>110</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">تشيز كيك</span><span>110</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">سان ساسبتيان</span><span>110</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">كيكة الجزر</span><span>125</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">كيكة العسل</span><span>125</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">بان كيك</span><span>165</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">مافن(فانيليا - بلو بيري - شوكلت)</span><span>90</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">مافن لوتس</span><span>110</span>
+  </div>
+</div>
+
+</section>
+
+
+
+
+<!-- Forth Section -->
+
+<section class="pt-[120px] xl:px-[300px] px-4">
+
+<div class="relative w-full rounded-2xl overflow-hidden">
+
+  <div class="relative w-full aspect-square sm:aspect-[3/1]">
+    <img
+      src="images/Extras_Menu.png"
+      alt="HOT Coffee"
+      class="absolute top-0 left-0 w-full h-full object-cover"
+    />
+
+    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
+                w-full h-[80px] sm:h-[80px] bg-[#472E1ECC] border-t border-b border-white
+                flex items-center justify-center">
+      <h2 class="text-white text-base font-bold lg:text-4xl sm:text-xl">قائمة الإضافات</h2>
+    </div>
+  </div>
+</div>
+
+
+  <div class="flex justify-center my-8">
+    <div class="bg-[#0F3C2D] text-white py-1 px-4 rounded-[10px] text-base md:text-lg font-bold text-center w-[90%] sm:w-[60%] md:w-[55%]">
+       الإضافات
+    </div>
+  </div>
+
+  <!-- Drinks List -->
+ <div class="w-full sm:w-[80%] md:w-[50%] mx-auto text-base md:text-lg text-right space-y-3">
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">اسبرسو(اكسترا)</span><span>70</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">صوص فستق</span><span>50</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">صوص لوتس</span><span>60</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">صوص دارك(شوكلت - واي شوكلت - نوتيلا)</span><span>40</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">فليفر</span><span>25</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">مشتقات الحليب</span><span>30</span>
+  </div>
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- Fiveth Section -->
+
+<section class="pt-[120px] xl:px-[300px] px-4 mb-24">
+
+<div class="relative w-full rounded-2xl overflow-hidden">
+
+  <div class="relative w-full aspect-square sm:aspect-[3/1]">
+    <img
+      src="images/hot_coffe.png"
+      alt="HOT Coffee"
+      class="absolute top-0 left-0 w-full h-full object-cover"
+    />
+
+    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
+                w-full h-[80px] sm:h-[80px] bg-[#472E1ECC] border-t border-b border-white
+                flex items-center justify-center">
+      <h2 class="text-white text-base font-bold lg:text-4xl sm:text-xl">جديد ضاد</h2>
+    </div>
+  </div>
+</div>
+
+
+  <div class="flex justify-center my-8">
+    <div class="bg-[#0F3C2D] text-white py-1 px-4 rounded-[10px] text-base md:text-lg font-bold text-center w-[90%] sm:w-[60%] md:w-[55%]">
+       الأصناف الحصرية
+    </div>
+  </div>
+
+  <!-- Drinks List -->
+ <div class="w-full sm:w-[80%] md:w-[50%] mx-auto text-base md:text-lg text-right space-y-3">
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">ماتشا مانجو لاتيه</span><span>125</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">ماتشا جوز هند</span><span>125</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">ماتشا بيري</span><span>135</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">ماتشا شوفان ذهرية</span><span>145</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">ماتشا فراولة</span><span>135</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">شيا فراولة</span><span>145</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">شيا بيري</span><span>145</span>
+  </div>
+  <div class="flex justify-start sm:justify-between hover:bg-[#d4c3af] px-2 space-x-4 sm:space-x-0">
+    <span class="flex-1">شيا كيوي</span><span>145</span>
+  </div>
+</div>
+
+
+</section>
+
+
+<footer class="fixed bottom-0 w-full h-[25px] bg-[#E6DCCA]/70 backdrop-blur-sm flex items-center justify-center text-xs text-[#462D1E] shadow-[0_-2px_4px_0_rgba(0,0,0,0.2)]">
+  <h1 class="text-[#462D1E]">Designed & Powered by <a href="http://amarjicreative.com/">Amarji Creative</a></h1>
+</footer>
+
+
+<script src="app.js"></script>
+
+</body>
+</html>

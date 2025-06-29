@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>قهوة ضاد</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+
+<body>
+
+<!-- ✅ Navbar -->
+<nav class="bg-[#E6DCCA]/70 shadow-md fixed top-0 left-0 w-full z-50 backdrop-blur-sm shadow-[0_-2px_4px_0_rgba(0,0,0,0.2)]">
+  <div class="w-full xl:px-[300px] px-4 flex items-center justify-between py-2">
+
+    <!-- Logo (on the right in RTL) -->
+    <div class="w-16 h-16 flex-shrink-0">
+      <img src="images/Dhad_Coffee_Logo.svg" alt="ضاد" class="w-full h-full object-contain" />
+    </div>
+
+    <!-- Hamburger Menu (on the left in RTL) -->
+    <button id="mobile-menu-button" class="xl:hidden flex items-center px-3 py-2 border rounded text-black border-black">
+      <svg class="fill-current h-6 w-6" viewBox="0 0 24 24">
+        <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+
+    <!-- Desktop Menu -->
+<ul class="hidden xl:flex space-x-reverse space-x-[80px] text-lg text-black font-bold custom-wide-gap">
+  <li><a href="index.html" class="nav-link underline-hover">الأصناف</a></li>
+  <li><a href="about.html" class="nav-link underline-hover">عن أسرة ضاد</a></li>
+  <li><a href="location.html" class="nav-link underline-hover">موقعنا</a></li>
+  <li class="ms-[60px]"><a href="contact.html" class="nav-link underline-hover text-[#083d2b] border-bot border-b-2 border-[#083d2b]">تواصل معنا</a></li>
+</ul>
+
+  </div>
+</nav>
+
+
+<!-- ✅ Mobile Menu -->
+<div id="mobile-menu" class="hidden fixed top-[70px] left-0 right-0 bg-[#e6dccb] shadow-md px-4 py-4 xl:hidden z-50">
+  <ul class="flex flex-col space-y-4 text-black text-lg font-bold">
+    <li><a href="index.html" class="nav-link underline-hover block">الأصناف</a></li>
+    <li><a href="about.html" class="nav-link underline-hover block">عن أسرة ضاد</a></li>
+    <li><a href="location.html" class="nav-link underline-hover block">موقعنا</a></li>
+    <li><a href="contact.html" class="nav-link underline-hover block">تواصل معنا</a></li>
+  </ul>
+</div>
+
+
+<section id="location" class="pt-32 pb-20 min-h-screen">
+
+<div class="w-full px-4 xl:px-[300px] text-center xl:text-right">
+
+    <!-- Section Title -->
+    <h2 class="text-3xl sm:text-4xl xl:text-[50px] font-bold text-[#023020] mb-8 mt-[60px]">
+      تواصل معنا
+    </h2>
+
+    <!-- To use it in below div (xl:items-start) -->
+    <div class="flex flex-col xl:flex-row-reverse gap-10 xl:gap-8 items-center">
+
+        <!-- Image -->
+      <div class="w-full xl:w-1/2 flex justify-center xl:justify-end">
+        <img src="images/location.png" alt="صورة عن ضاد" class="rounded-lg shadow-lg w-[300px] h-[300px] object-cover">
+      </div>
+
+    <div class="w-full xl:w-[500px] text-[14px] sm:text-[15px] text-gray-700 leading-loose flex flex-col items-center xl:items-end">
+
+    <div class="w-full sm:w-[90%] md:w-[80%] xl:w-[500px] text-[12px] leading-[40px] text-[#472E1E] font-medium text-right text-justify">
+        <ul class="text-[#472E1E] text-[22px] font-bold leading-[40px] text-center mb-10">
+            <li>رقم الهاتف</li>
+            <li>0020 104 000 8075</li>
+        </ul>
+        <ul class="text-[#472E1E] text-[22px] font-bold leading-[40px] text-center mb-10">
+            <li>واتساب</li>
+            <li>0020 104 001 9868</li>
+        </ul>
+        <ul class="text-[#472E1E] text-[22px] font-bold leading-[40px] text-center">
+            <li>البريد الإلكتروني</li>
+            <li>Dhad.coffee5@gmail.com</li>
+        </ul>
+      </div>
+    </div>
+</div>
+
+</div>
+
+</section>
+
+
+<footer class="fixed bottom-0 w-full h-[25px] bg-[#E6DCCA]/70 backdrop-blur-sm flex items-center justify-center text-xs text-[#462D1E] shadow-[0_-2px_4px_0_rgba(0,0,0,0.2)]">
+  <h1 class="text-[#462D1E]">Designed & Powered by <a href="http://amarjicreative.com/">Amarji Creative</a></h1>
+</footer>
+
+<script src="app.js"></script>
+
+</body>
+</html>
